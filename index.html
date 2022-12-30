@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>IP Address</title>
+  </head>
+  <body>
+    <center>
+    <h1>User's IP Address</h1>
+    <hr>
+    <p id="ip"></p>
+    <button onclick="apiCall()" id="btn">Get Data</button>
+
+    <div id="page2">
+      <p id="lat"></p>
+      <p id="long"></p>
+      <p id="city"></p>
+      <p id="region"></p>
+      <p id="org"></p>
+      <p id="timezone"></p>
+      <p id="postal"></p>
+      <p id="dateTime"></p>
+      <iframe frameborder="0" id="map" width="600" height="400" frameborder="0" style="border:0"></iframe>
+
+      <p id="noOfPincode"></p>
+
+      <input type="text" placeholder="Filter">
+      
+      <div id="postalData"></div>
+    </div>
+  </center>
+  </body>
+  <script src="./script.js"></script>
+</html>
